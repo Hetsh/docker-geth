@@ -31,10 +31,13 @@ case "${1-}" in
 		--rm \
 		--tty \
 		--interactive \
-		--publish 31416:31416/tcp \
+		--publish 8545:8545/tcp \
+		--publish 8546:8546/tcp \
+		--publish 30303:30303/tcp \
+		--publish 30303:30303/udp \
 		--mount type=bind,source=/etc/localtime,target=/etc/localtime,readonly \
 		--name "$APP_NAME" \
-		"$IMG_NAME" --allow_remote_gui_rpc
+		"$IMG_NAME"
 	;;
 	# Push image to docker hub
 	"--upload")

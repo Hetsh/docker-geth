@@ -22,8 +22,7 @@ update_image "library/alpine" "Alpine Linux" "false" "\d{8}"
 # Packages
 IMG_ARCH="x86_64"
 BASE_PKG_URL="https://pkgs.alpinelinux.org/package/edge"
-update_pkg "geth" "Go Ethereum Client" "true" "$BASE_PKG_URL/testing/$IMG_ARCH" "(\d+\.)+\d+-r\d+"
-update_pkg "ca-certificates" "CA-Certificates" "false" "$BASE_PKG_URL/main/$IMG_ARCH" "\d{8}-r\d+"
+update_pkg "geth" "Go Ethereum Client" "true" "$BASE_PKG_URL/community/$IMG_ARCH" "(\d+\.)+\d+-r\d+"
 
 if ! updates_available; then
 	#echo "No updates available."
