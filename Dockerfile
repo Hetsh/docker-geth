@@ -1,4 +1,4 @@
-FROM library/alpine:20200917
+FROM library/alpine:20201218
 RUN apk add --no-cache \
     geth=1.9.25-r0
 
