@@ -1,4 +1,4 @@
-FROM amd64/alpine:20210730
+FROM amd64/alpine:20210804
 RUN apk add --no-cache \
         geth=1.10.6-r0
 
