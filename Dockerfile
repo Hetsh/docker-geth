@@ -1,6 +1,6 @@
 FROM amd64/alpine:20220328
 RUN apk add --no-cache \
-        geth=1.10.16-r1
+        geth=1.10.17-r0
 
 # App user
 ARG APP_UID=1373
